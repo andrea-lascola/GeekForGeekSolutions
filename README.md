@@ -4,7 +4,7 @@ My attempt to give solutions to the most popular programming exercises found her
 
 https://www.geeksforgeeks.org
 
-*Solutions are written in Python*
+*Solutions are written in Python 3.7*
 
 Have fun 🍻
  
