@@ -1,4 +1,4 @@
-#*Geek for Geek🤓 Solutions* 
+# Geek for Geek🤓 Solutions
 
 My attempt to give solutions to the most popular programming exercises found here:
 
