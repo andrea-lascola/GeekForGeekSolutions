@@ -36,6 +36,12 @@ def solution3(data):
 
 
 def solution4(data):
+    """
+    Generate a new array
+    Time: O(n)
+    :param data:
+    :return:
+    """
     data_length = len(data)
     reverted = [None] * data_length
 
@@ -45,6 +51,8 @@ def solution4(data):
         if right_index == left_index:
             reverted[left_index] = element
             break
+        elif left_index > right_index:
+            break
         else:
             reverted[right_index] = element
             reverted[left_index] = data[data_length - 1 - left_index]
@@ -52,12 +60,38 @@ def solution4(data):
     return reverted
 
 
+def solution5(data):
+    """
+    Swap in place
+    Time: O(n)
+    :param data:
+    :return:
+    """
+    data_length = len(data)
+
+    for left_index, element in enumerate(data):
+        right_index = data_length - 1 - left_index
+
+        if right_index == left_index:
+            data[left_index] = element
+            break
+        elif left_index > right_index:
+            break
+        else:
+            right_element = data[data_length - 1 - left_index]
+            data[right_index] = element
+            data[left_index] = right_element
+
+    return data
+
+
 def reverse(data):
     sol = random.choice([
         solution1,
         solution2,
         solution3,
-        solution4
+        solution4,
+        solution5
     ])
 
     return list(sol(data))
