@@ -6,7 +6,8 @@ https://www.geeksforgeeks.org
 
 *Solutions are written in Python 3.7*
 
-.
+Exercises
+```bash
 ├── array
 │   ├── misc
 │   │   └── consecutive_numbers.py
@@ -26,7 +27,7 @@ https://www.geeksforgeeks.org
     └── design
         ├── queue_using_stacks.py
         └── stack_using_queue.py
-
+```
 
 Have fun 🍻
  
